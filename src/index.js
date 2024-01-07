@@ -6,7 +6,6 @@ import reportWebVitals from './reportWebVitals';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import Notfound from './pages/Notfound';
 import Qna from './pages/Qna';
-import Search from './pages/Search';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -18,7 +17,6 @@ const routes = createBrowserRouter([
 
         children : [
             {path : '/board/qna', element : <Qna/>},
-            {path : '/search', element : <Search/>},
         ]
     }
 ])
