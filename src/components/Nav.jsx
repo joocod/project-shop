@@ -1,12 +1,14 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
+import Menu from './Menu'
 
 
 function Nav() {
     return (
         <Headercontainer>
             <h1><Link to='/'>shop</Link></h1>
+            <Menu/>
         </Headercontainer>
     )
 }
