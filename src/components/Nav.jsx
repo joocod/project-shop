@@ -7,7 +7,6 @@ function Nav() {
     return (
         <Headercontainer>
             <h1><Link to='/'>shop</Link></h1>
-            <Menu/>
         </Headercontainer>
     )
 }
