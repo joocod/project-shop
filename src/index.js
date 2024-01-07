@@ -3,11 +3,22 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { RouterProvider, createBrowserRouter } from 'react-router-dom';
+import Notfound from './pages/Notfound';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
+const routes = createBrowserRouter([
+    {
+        path : '/',
+        element : <App/>,
+        errorElement : <Notfound/>,
+    }
+])
+
 root.render(
   <React.StrictMode>
-    <App />
+    <RouterProvider router={routes}/>
   </React.StrictMode>
 );
 
