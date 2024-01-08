@@ -1,15 +1,10 @@
 import React from 'react'
-import { Link, useNavigate } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 import Menu from './Menu'
 
 
 function Nav() {
-    const navigate = useNavigate();
-
-    const login = ()=>{
-        navigate('/login');
-    }
 
     return (
         <Headercontainer>
